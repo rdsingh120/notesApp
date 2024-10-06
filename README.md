@@ -17,7 +17,7 @@ The **NotesApp** is a simple, intuitive application designed for users to create
 
 ## Tech Stack
 
-- **Frontend**: React (or another framework/library)
+- **Frontend**: React
 - **Backend**: Node.js with Express
 - **Database**: MongoDB (NoSQL)
 - **Authentication**: JWT (JSON Web Tokens) or OAuth2
