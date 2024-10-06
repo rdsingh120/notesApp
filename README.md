@@ -23,3 +23,5 @@ The **NotesApp** is a simple, intuitive application designed for users to create
 - **Authentication**: JWT (JSON Web Tokens) or OAuth2
 - **Styling**: Tailwind CSS (or another CSS framework)
 - **API**: RESTful API architecture
+
+![Screenshot 2024-10-06 141033](https://github.com/user-attachments/assets/f96fda60-81db-4fd1-b8ce-b56b9d8f74f6)
