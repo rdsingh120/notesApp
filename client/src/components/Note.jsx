@@ -1,22 +1,28 @@
 import { MdModeEditOutline } from 'react-icons/md'
+import { AiTwotoneSave } from 'react-icons/ai'
+import { useState } from 'react'
 
 const Note = () => {
+  const [save, setSave] = useState(false)
   return (
     <article
-      className="flex flex-col gap-3
-    border w-80 h-80 rounded-3xl p-3 overflow-hidden bg-[#f5972c] hover:scale-95 duration-200"
+      className="note flex flex-col gap-3
+     w-80 h-80 rounded-3xl overflow-hidden bg-[#fff740] hover:scale-[.99] duration-200"
     >
       <textarea
         className="outline-none text-lg font-semibold rounded-xl w-full h-60
-        resize-none bg-transparent text-[#5a3812] p-2"
+        resize-none bg-transparent p-5"
         name=""
         id=""
       ></textarea>
-      <div className="flex justify-between items-center pl-5 pr-2">
-        <span className="text-sm font-semibold text-gray-800">October 5, 2024</span>
-        <div className="flex items-center justify-center rounded-full bg-black p-1.5">
-          <MdModeEditOutline className="text-white text-xl cursor-pointer" />
-        </div>
+      <div className="flex justify-between mx-7 items-center">
+        <span className="text-sm font-semibold text-gray-800"></span>
+        <button
+          className="text-black text-4xl cursor-pointer"
+          onClick={() => setSave(!save)}
+        >
+          {save ? <MdModeEditOutline /> : <AiTwotoneSave />}
+        </button>
       </div>
     </article>
   )
