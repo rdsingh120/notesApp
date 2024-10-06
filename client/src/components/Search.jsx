@@ -1,4 +1,5 @@
 import { CiSearch } from 'react-icons/ci'
+
 const Search = () => {
   return (
     <div className="flex items-center gap-5 relative rounded-full max-w-[800px] overflow-hidden">

@@ -1,6 +1,4 @@
-import Note from './Note'
-
-const Notes = ({notes}) => {
+const Notes = ({ notes }) => {
   return (
     <div className="my-16">
       <h1 className="text-5xl max-sm:text-center font-semibold mb-10">Notes</h1>

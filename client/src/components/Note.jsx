@@ -2,12 +2,12 @@ import { MdModeEditOutline } from 'react-icons/md'
 import { AiTwotoneSave } from 'react-icons/ai'
 import { useState } from 'react'
 
-const Note = () => {
+const Note = ({ color = '#ff7eb9' }) => {
   const [save, setSave] = useState(false)
   return (
     <article
-      className="note flex flex-col gap-3
-     w-80 h-80 rounded-3xl overflow-hidden bg-[#fff740] hover:scale-[.99] duration-200"
+      style={{ background: color }}
+      className={`note flex flex-col gap-3 w-80 h-80 rounded-3xl overflow-hidden hover:scale-[.99] duration-200`}
     >
       <textarea
         className="outline-none text-lg font-semibold rounded-xl w-full h-60
