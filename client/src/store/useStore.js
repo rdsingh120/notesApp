@@ -31,6 +31,9 @@ const useStore = create((set) => ({
     }))
     return { success: data?.success, message: data?.message }
   },
+  pinNote: async (id) => {
+    
+  }
 }))
 
 export default useStore
